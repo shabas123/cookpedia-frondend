@@ -1,0 +1,25 @@
+<div class="container my-5">
+    <h1>My Profile</h1>
+    <label>
+        <input (change)="getFile($event)" type="file" style="display: none;" name="img">
+        <img [src]="profileImage" alt="" width="200px" height="200px">
+    </label>
+    <br>
+    <button (click)="updateProfile()" class="btn btn-success m-3">Update Profile</button>
+</div>
+
+<div class="row">
+
+    @for (item of allUserDownloadList; track $index) {
+    <div class="col-lg-2 mt-3">
+        <div class="p-3">
+            <img [src]="item.recipeImage" alt="img-fluid" class="img-fluid">
+            <div class="card-body mt-2">
+                <h5>{{item.recipeName}}</h5>
+            </div>
+
+        </div>
+    </div>
+    }
+
+</div>

@@ -1,0 +1,104 @@
+<div class="container-fluid">
+    <div class="row bg-success p-5 mb-5 mt-2">
+        <div class="col-md-2"></div>
+        <div class="col-lg-4">
+            <h1 class="fw-bolder text-light">The Easiest way <br> TO Make Your <br> Favorite Meal</h1>
+            <p style="text-align: justify;" class="my-3"> Discover 100+ recipes in your hand with the best recipe. <br>
+                Help you to find the easiest way to cook.
+            </p>
+            <a routerLink="/all-recipes" class="btn text-light" style="background-color: darkgreen;">Explore Our
+                Recipes</a>
+        </div>
+        <div class="col-md-6">
+            <img class="w-50 landingImg" style="margin-left: 150px;"
+                src="https://www.pngall.com/wp-content/uploads/2/Healthy-Meal.png" alt="">
+        </div>
+    </div>
+</div>
+<!-- Popular recipes section -->
+<section class="container my-5 py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2 class="fw-bold display-6">Popular Recipes Of the Week</h2>
+            <p class="text-muted mb-0">Discover what our community is loving this week</p>
+        </div>
+        <a routerLink="/all-recipes" class="btn btn-outline-success">View All →</a>
+    </div>
+
+    <div class="row g-4">
+        @for (recipes of allRecipes; track $index) {
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-0 shadow-sm hover-shadow transition-all">
+                <div class="position-relative">
+                    <img [src]="recipes.image" class="card-img-top" alt="{{recipes.name}}" style="height: 220px; object-fit: cover;">
+                    <div class="position-absolute top-0 end-0 bg-success text-white px-2 py-1 m-2 rounded-pill small">
+                        <i class="bi bi-star-fill me-1"></i>Popular
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">{{recipes.name}}</h5>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="badge bg-light text-dark">
+                            <i class="bi bi-clock me-1"></i> {{recipes.time}} mins
+                        </span>
+                        <span class="badge bg-light text-dark">
+                            <i class="bi bi-heart me-1"></i> {{recipes.likes}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</section>
+      
+<!-- banner -->
+    <div class="row d-flex align-items-center"
+        style="height: 400px; background-image: url('https://i.pinimg.com/originals/bf/65/d5/bf65d51f34b1bf193ec947f3c0c3f3e0.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="col-md-6 ms-auto mt-5">
+            <div class="bg-light rounded p-5 w-75">
+                <h3>50+ Recipe That very Quick And Fast</h3>
+                <p>Find the perfect food ideas start your day with the quick and easiest way </p>
+            </div>
+        </div>
+        <div class="col-md-6"></div>
+    </div>
+
+    <!-- Download App -->
+     <div class="my-5 row align-items-center text-light bg-success  rounded p-5" style="height: 450px;">
+        <div class="col-lg-6">
+            <img height="350px" src="https://toppng.com/uploads/thumbnail/android-app-on-google-play-11568829115kt4gig8l67.png" alt="">
+        </div>
+        <div class="col-lg-6 col-sm-12 text-center">
+            <h1>Download App</h1>
+            <h5>Download the app fro App Store or <br>Google Play for a better experience</h5>
+            <img width="160px" src="https://freepngimg.com/download/android/67006-app-play-google-android-store-free-clipart-hd.png" alt="">
+            <img width="150px" src="https://benic360.com/wp-content/uploads/2020/06/apple-store-icon-png-8.png" alt="">
+        </div>
+
+     </div>
+     <!-- Testmonial -->
+      <div class="text-center my-5 ">
+        <h1>Clinet Testimonials</h1>
+        <marquee behavior="" direction="">
+            <div class="d-flex my-3">
+                <div class="rounded border w-20 p-3 me-2">
+                    <h5>Abraham Quraishi</h5>
+                    <p>Very Usefull website!!!</p>
+                </div>
+                <div class="rounded border w-20 p-3 me-2">
+                    <h5>Abraham Quraishi</h5>
+                    <p>Very Usefull website!!!</p>
+                </div>
+                <div class="rounded border w-20 p-3 me-2">
+                    <h5>Abraham Quraishi</h5>
+                    <p>Very Usefull website!!!</p>
+                </div>
+                <div class="rounded border w-20 p-3 me-2">
+                    <h5>Abraham Quraishi</h5>
+                    <p>Very Usefull website!!!</p>
+                </div>
+            </div>
+        </marquee>
+
+      </div>

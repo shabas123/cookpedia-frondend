@@ -1,0 +1,93 @@
+<section class="hero-section container  navbar-expand-lg bg-success">
+    <div class="container text-center ">
+      <h1 class="fw-bold pt-5 text-white">Contact Us</h1>
+      <p class="mt-5 py-5 text-white text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint alias, deserunt hic facere, beatae odit reprehenderit, cum laborum illo a eos cupiditate iste fugit dignissimos quaerat maiores! Illum repellendus possimus molestias quibusdam.
+      </p>
+    </div>
+  </section>
+  <section style="padding: 50px 0;">
+    <div class="container">
+      <div class="row">
+        <!-- Left Side: Contact Info -->
+         <div class="col-md-1"></div>
+        <div class="col-md-4">
+          <h2 style="font-weight: bold;">Get In Touch</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quasi odio aperiam! 
+            Quasi eius expedita, voluptatibus dolorem corrupti accusantium.
+          </p>
+  
+          <div style="font-size: 16px;">
+            <p style="display: flex; align-items: center;">
+              <i class="fas fa-map-marker-alt" style="color: green; font-size: 20px; margin-right: 10px;"></i>
+              <strong>Address</strong>
+            </p>
+            <p style="margin-left: 30px;">NYC 4567, PO Berlin.</p>
+            <p style="display: flex; align-items: center;">
+              <i class="fas fa-phone-alt" style="color: green; font-size: 20px; margin-right: 10px;"></i>
+              <strong>Phone Number</strong>
+            </p>
+            <p style="margin-left: 30px;">9086754321</p>
+            <p style="display: flex; align-items: center;">
+              <i class="fas fa-envelope" style="color: green; font-size: 20px; margin-right: 10px;"></i>
+              <strong>Email</strong><br>
+            </p>
+            <p style="margin-left: 30px;">Email</p>
+          </div>
+  
+          <hr>
+  
+          <h4>Follow Us</h4>
+          <div style="display: flex; gap: 15px; font-size: 24px;">
+            <i class="fab fa-facebook" style="color: green; cursor: pointer;"></i>
+            <i class="fab fa-instagram" style="color: green; cursor: pointer;"></i>
+            <i class="fab fa-twitter" style="color: green; cursor: pointer;"></i>
+            <i class="fab fa-whatsapp" style="color: green; cursor: pointer;"></i>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+  
+        <!-- Right Side: Exact Testimonial Design -->
+        <div class="col-md-4">
+          <div style="
+            background: white; 
+            padding: 25px; 
+            border-radius: 10px; 
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.1); 
+            max-width: 450px; 
+            margin: auto;">
+            <form [formGroup]="testimonyForm" (ngSubmit)="addTestimony()"  class="border rounded shadow p-5">
+            <h3 style="font-weight: bold; margin-bottom: 15px;">Client Testimony</h3>
+           
+              <div style="margin-bottom: 15px;">
+                <label class="form-label" style="font-weight: 500;">Name</label>
+                <input name="name" formControlName="name" type="text" class="form-control" placeholder="Enter your name" 
+                       style="border-radius: 6px; padding: 10px;">
+              </div>
+              <div style="margin-bottom: 15px;">
+                <label class="form-label" style="font-weight: 500;">E Mail</label>
+                <input name="email" formControlName="email" type="email" class="form-control" placeholder="Enter your email"
+                       style="border-radius: 6px; padding: 10px;">
+              </div>
+              <div style="margin-bottom: 15px;">
+                <label class="form-label" style="font-weight: 500;">Message</label>
+                <textarea name="message" formControlName="message" class="form-control" rows="4" placeholder="Your message"
+                          style="border-radius: 6px; padding: 10px;"></textarea>
+              </div>
+              <p style="font-size: 14px; color: gray;">
+                By submitting, you're agreeing to the terms and conditions of our website. 
+                We may use your details on our site.
+              </p>
+              <button  type="submit" class="btn btn-success w-100" 
+                      style="border-radius: 6px; padding: 10px; font-weight: bold;">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Google Map Section -->
+<div class="container" style="margin-top: 10px; margin-bottom: 30px;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15587.434644962565!2d75.74800445088489!3d11.391150660361376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1743761427287!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  </div>
